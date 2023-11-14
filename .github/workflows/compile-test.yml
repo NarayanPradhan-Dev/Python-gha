@@ -9,4 +9,4 @@ jobs :
       - uses : actions/setup-node@v3
         with :
           node-version : '14'
-      - run : python3 hello.py
+      - run : python3 ../hello-world/hello.py
