@@ -2,7 +2,7 @@ name : Compile and run test
 run-name : For ${{ github.actor }} compiling and running and test
 on : [push]
 jobs : 
-  compile
+  compile :
     runs-on : ubuntu-latest
     steps :
       - uses : actions/checkout@v4
