@@ -1,6 +1,6 @@
 name : Compile and run test
 run-name : For ${{ github.actor }} compiling and running and test
-on : [puish]
+on : [push]
 jobs : 
   compile
     runs-on : ubuntu-latest
