@@ -1,0 +1,12 @@
+name : Compile and run test
+run-name : For ${{ github.actor }} compiling and running and test
+on : [puish]
+jobs : 
+  compile
+    runs-on : ubuntu-latest
+    steps :
+      - uses : actions/checkout@v4
+      - uses : actions/setup-node@v3
+        with :
+          node-version : '14'
+      - run : python3 hello-world_hello.py
