@@ -5,8 +5,12 @@ jobs :
   compile :
     runs-on : ubuntu-latest
     steps :
-      - uses : actions/checkout@v4
-      - uses : actions/setup-node@v3
+      - name : checkout code
+        uses : actions/checkout@v4
+      - name : setup environment 
+        uses : actions/setup-python@v2
         with :
-          node-version : '14'
-      - run : python3 hello-world/hello.py
+          python-version : 3.8
+      - name : Run python script
+        run : |
+          python3 -m hello-world/hello.py
