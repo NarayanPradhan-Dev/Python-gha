@@ -13,4 +13,6 @@ jobs :
           python-version : 3.8
       - name : Run python script
         run : |
+          pwd
+          ls -al
           python3 hello-world/hello.py
