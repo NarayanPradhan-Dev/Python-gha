@@ -13,6 +13,8 @@ jobs :
           python-version : 3.8
       - name : Run python script
         run : |
-          pwd
-          ls -al
           python3 hello_world/hello.py
+      -name : Run python tests
+        run : |
+        python3 -m unittest discover tests/
+          
