@@ -14,7 +14,7 @@ jobs :
       - name : Run python script
         run : |
           python3 hello_world/hello.py
-      -name : Run python tests
+      - name : Run python tests
         run : |
-        python3 -m unittest discover tests/
+          python3 -m unittest discover tests/
           
