@@ -13,4 +13,4 @@ jobs :
           python-version : 3.8
       - name : Run python script
         run : |
-          python3 -m hello-world/hello.py
+          python3 hello-world/hello.py
